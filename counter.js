@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		document.addEventListener('DOMContentLoaded',function(){
+			document.querySelector('button').onclick = count;
+		})
+
+		let counter = 0;
+
+		function count (){
+			counter++;
+			document.querySelector('#counter').innerHTML = counter;
+
+			if (counter % 10 === 0) {
+				//alert(`Mày đếm tới số ${counter} là được rồi!`);
+				alert(`Counter is at ${counter}!`);
+			}
+		}
+	</script>
+	<title>My Web</title>
+</head>
+<body>
+		<h1 id="counter">1</h1>
+		<button onclick="count()">Click Here!</button>
+</body>
+</html>
