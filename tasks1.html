@@ -5,11 +5,11 @@
 		document.addEventListener('DOMContentLoaded',()=>{
 
 			//by default, sudmit button is disable
-			document.querySelector('#submit').disable = true;
+			document.querySelector('#submit').disabled = true;
 
 			//enable  button only if there is text in the input field
 			document.querySelector('#task').onkeyup = () => {
-				document.querySelector('#submit').disable = false;
+				document.querySelector('#submit').disabled = false;
 			};
 
 			document.querySelector('#new-task').onsubmit = () =>{
@@ -22,7 +22,7 @@
 
 				//clear input field
 				document.querySelector('#task').value ='';
-				document.querySelector('#submit').disable =true ;
+				document.querySelector('#submit').disabled =true ;
 
 				//stop form from submiting
 				return false;
